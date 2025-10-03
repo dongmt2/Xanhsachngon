@@ -1,0 +1,66 @@
+<wpml-config>
+    <theme-configs>
+        <textdomains>
+            <textdomain>shopper-shoppable</textdomain>
+        </textdomains>
+        <custom-fields>
+            <!-- Add any custom fields here that are used by your theme and need translation. -->
+            <!-- Example:
+            <custom-field action="translate">my_custom_field</custom-field>
+            -->
+        </custom-fields>
+        <admin-texts>
+            <key name="theme_mods_shopper-shoppable">
+                <!-- These are theme modification options. While colors themselves aren't translated,
+                     if any of these keys ever store translatable text (e.g., a custom footer text),
+                     they would be listed here. -->
+                <key name="__primary_color" />
+                <key name="__secondary_color" />
+                <key name="blog_layout" />
+                <key name="single_post_layout" />
+                <!-- If you have any other theme options that store translatable strings, add them here. -->
+                <!-- Example:
+                <key name="my_custom_footer_text" />
+                -->
+            </key>
+        </admin-texts>
+        <post-types>
+            <!-- Standard WordPress post types are usually handled by WPML automatically.
+                 If you have custom post types defined in your theme, list them here. -->
+            <!-- Example:
+            <post-type name="my_custom_post_type">
+                <fields>
+                    <field type="title" />
+                    <field type="editor" />
+                    <field type="excerpt" />
+                </fields>
+            </post-type>
+            -->
+        </post-types>
+        <taxonomies>
+            <!-- Standard WordPress taxonomies are usually handled by WPML automatically.
+                 If you have custom taxonomies defined in your theme, list them here. -->
+            <!-- Example:
+            <taxonomy name="my_custom_taxonomy" />
+            -->
+        </taxonomies>
+    </theme-configs>
+    <woocommerce>
+        <!-- This section helps WPML understand how to handle WooCommerce elements.
+             WPML usually handles products, categories, and tags automatically,
+             but this ensures compatibility. -->
+        <product-types>
+            <product-type name="simple" />
+            <product-type name="variable" />
+            <product-type name="grouped" />
+            <product-type name="external" />
+        </product-types>
+        <attributes>
+            <!-- If you have custom product attributes that need to be translated, list them here. -->
+            <!-- Example:
+            <attribute name="color" />
+            <attribute name="size" />
+            -->
+        </attributes>
+    </woocommerce>
+</wpml-config>

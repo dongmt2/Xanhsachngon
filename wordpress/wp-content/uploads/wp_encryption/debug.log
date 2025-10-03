@@ -1,0 +1,36 @@
+<b>7.8.5.0  SINGLE DOMAIN SSL 0 - http://dongkma.live - WEB</b>
+Domain covered:
+["dongkma.live","www.dongkma.live"]
+
+[14-09-2025 06:03:43] :
+No account found, attempting to create account.
+
+[14-09-2025 06:03:44] :
+LEClient finished constructing
+
+[14-09-2025 06:03:44] :
+No order found for 'dongkma.live'. Creating new order.
+
+[14-09-2025 06:03:45] :
+Created order for 'dongkma.live'.
+
+Offering manual verification procedure. 
+
+Syncing debug log
+Local check - All HTTP challenges verified
+
+[14-09-2025 06:11:53] :
+LEClient finished constructing
+
+Starting HTTP verification
+Finalizing the order
+[14-09-2025 06:12:00] :
+Order for 'dongkma.live' finalized.
+
+Getting SSL certificates
+[14-09-2025 06:12:00] :
+Certificate for 'dongkma.live' saved
+
+<h2>SSL Certificate generated successfully!</h2>
+Stored private key as option
+Syncing debug log

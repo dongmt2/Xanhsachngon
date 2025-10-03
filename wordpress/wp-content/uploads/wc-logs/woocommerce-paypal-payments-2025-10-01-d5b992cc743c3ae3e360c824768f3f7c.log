@@ -1,0 +1,87 @@
+2025-10-01T05:25:12+00:00 DEBUG #1971 - [New Request] GET /wp-admin/admin.php
+2025-10-01T05:25:12+00:00 DEBUG #1971 - GET https://api.woocommerce.com/integrations/ppc/v1/customer/partners/K8SKZ36LQBWXJ/merchant-integrations/
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+2025-10-01T05:25:12+00:00 WARNING #1971 - [Error] Not Found CONTEXT: {"args":{"method":"GET","headers":{"Authorization":"Bearer token","Content-Type":"application/json"}},"response":{"headers":{},"body":"{"statusCode":404,"error":"Not Found","message":"Not Found"}","response":{"code":404,"message":"Not Found"},"cookies":[],"filename":null,"http_response":{"data":null,"headers":null,"status":null}}}
+2025-10-01T05:25:16+00:00 DEBUG #9074 - [New Request] GET /wp-json/wc/v3/wc_paypal/webhooks
+2025-10-01T05:25:16+00:00 DEBUG #9074 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+2025-10-01T05:25:17+00:00 DEBUG #1182 - [New Request] POST /wp-json/wc/v3/wc_paypal/login_link
+2025-10-01T05:25:17+00:00 INFO #1182 - Generating onboarding URL for: sandbox-express_checkout-
+2025-10-01T05:25:17+00:00 DEBUG #1182 - POST https://api.woocommerce.com/integrations/ppcsandbox/v2/customer/partner-referrals
+Request Body: {"partner_config_override":{"return_url":"https:\/\/dongkma.live\/wp-admin\/admin.php?page=wc-settings&tab=checkout&section=ppcp-gateway&ppcpToken=eyJrIjoic2FuZGJveC1leHByZXNzX2NoZWNrb3V0LSIsInUiOjEsImgiOiIxOGVhNjY0Y2NlYmE2MmE2OTIwOGFhNDMxZWYyOWFhNCJ9","return_url_description":"Return to your shop.","show_add_credit_card":false},"products":["EXPRESS_CHECKOUT"],"legal_consents":[{"type":"SHARE_DATA_CONSENT","granted":true}],"operations":[{"operation":"API_INTEGRATION","api_integration_preference":{"rest_api_integration":{"integration_method":"PAYPAL","integration_type":"FIRST_PARTY","first_party_details":{"features":["PAYMENT","REFUND","ADVANCED_TRANSACTIONS_SEARCH","TRACKING_SHIPMENT_READWRITE","BILLING_AGREEMENT"],"seller_nonce":"a1233wtergfsdt4365tzrshgfbaewa36AGa1233wtergfsdt4365tzrshgfbaewa36AG"}}}}]}
+Response Debug ID: 60130dc926d63
+Response: Array
+(
+    [code] => 201
+    [message] => Created
+)
+
+2025-10-01T05:25:38+00:00 DEBUG #5947 - [New Request] POST /wp-json/wc/v3/wc_paypal/login_link
+2025-10-01T05:25:38+00:00 DEBUG #5947 - Loaded onboarding URL from cache: sandbox-express_checkout-
+2025-10-01T05:25:38+00:00 INFO #5947 - Using cached onboarding URL for: sandbox-express_checkout-
+2025-10-01T05:25:38+00:00 DEBUG #3284 - [New Request] POST /wp-json/wc/v3/wc_paypal/login_link
+2025-10-01T05:25:38+00:00 DEBUG #3284 - Loaded onboarding URL from cache: sandbox-express_checkout-
+2025-10-01T05:25:38+00:00 INFO #3284 - Using cached onboarding URL for: sandbox-express_checkout-
+2025-10-01T05:26:45+00:00 DEBUG #6063 - [New Request] POST /wp-json/wc/v3/wc_paypal/authenticate/oauth
+2025-10-01T05:26:45+00:00 INFO #6063 - Storing one-time OAuth credentials... CONTEXT: {"shared_id":"BAAMhfV6dOlXCdLoD0ozSn8s6Kw1NE8vSTEN8_Vdjtv6D_DPGe7GFNc_3hw2Slr2GaPY0NJnH1Jvl2eD1M","auth_code":"C21AALnEeP1oqeCpbnfzD1VTl_S4fInJ9rEQlBtuP7E0vjOIhjy97ppL7eKa1NsNrbOywe9shPK56X6N2eI40pPwghJ1u0itw","use_sandbox":true}
+2025-10-01T05:26:59+00:00 DEBUG #2127 - [New Request] GET /wp-admin/admin.php
+2025-10-01T05:26:59+00:00 DEBUG #2127 - Validating onboarding ppcpToken: ey...FhNCJ9
+2025-10-01T05:26:59+00:00 INFO #2127 - Validated onboarding ppcpToken: ey...FhNCJ9
+2025-10-01T05:26:59+00:00 INFO #2127 - Extracting connection data from request...
+2025-10-01T05:26:59+00:00 INFO #2127 - Found OAuth merchant data in request CONTEXT: {"merchant_id":"XDYD7RR6LF3WN","merchant_email":"sb-ozy8w44593897@business.example.com","seller_type":"business"}
+2025-10-01T05:26:59+00:00 INFO #2127 - Attempting OAuth login to PayPal... CONTEXT: {"sandbox":true,"shared_id":"BAAMhfV6dOlXCdLoD0ozSn8s6Kw1NE8vSTEN8_Vdjtv6D_DPGe7GFNc_3hw2Slr2GaPY0NJnH1Jvl2eD1M"}
+2025-10-01T05:26:59+00:00 DEBUG #2127 - POST https://api-m.sandbox.paypal.com/v1/oauth2/token/
+Response Debug ID: f4684731ca844
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2025-10-01T05:27:00+00:00 DEBUG #2127 - GET https://api-m.sandbox.paypal.com/v1/customer/partners/MPMFHQTVMBZ6G/merchant-integrations/credentials/
+Response Debug ID: f40342923ca4a
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2025-10-01T05:27:00+00:00 INFO #2127 - Updating connection details CONTEXT: {"is_sandbox":true,"client_id":"BAAMhfV6dOlXCdLoD0ozSn8s6Kw1NE8vSTEN8_Vdjtv6D_DPGe7GFNc_3hw2Slr2GaPY0NJnH1Jvl2eD1M","client_secret":"EPitnIwMQ-py7Ve8TP1SBiZSVdqvd3nbbW_q2ZRGd1i-ef1V17zRKf-sHPcuTA0Nuf_wdT2BtqzjPQeY","merchant_id":"XDYD7RR6LF3WN","merchant_email":"sb-ozy8w44593897@business.example.com","merchant_country":"","seller_type":"business"}
+2025-10-01T05:27:00+00:00 INFO #2127 - Merchant successfully connected to PayPal
+2025-10-01T05:27:00+00:00 INFO #2127 - Calling internal REST endpoint [https://dongkma.live/wp-json/wc/v3/wc_paypal/common/seller-account]
+2025-10-01T05:27:01+00:00 DEBUG #2127 - Finished internal REST call [https://dongkma.live/wp-json/wc/v3/wc_paypal/common/seller-account]
+2025-10-01T05:27:01+00:00 INFO #2127 - Internal REST success! CONTEXT: {"json":{"success":true,"data":{"country":"VN"}}}
+2025-10-01T05:27:01+00:00 INFO #2127 - Flushing API caches...
+2025-10-01T05:27:01+00:00 INFO #2127 - Merchant connected, complete onboarding and set defaults.
+2025-10-01T05:27:01+00:00 DEBUG #2127 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+2025-10-01T05:27:01+00:00 ERROR #2127 - Failed to delete webhooks: [Error] Not Found
+2025-10-01T05:27:01+00:00 INFO #2127 - Webhooks deleted.
+2025-10-01T05:27:02+00:00 DEBUG #2127 - POST https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Request Body: {"url":"https:\/\/dongkma.live\/wp-json\/paypal\/v1\/incoming","event_types":[{"name":"CHECKOUT.ORDER.APPROVED"},{"name":"CHECKOUT.ORDER.COMPLETED"},{"name":"CHECKOUT.PAYMENT-APPROVAL.REVERSED"},{"name":"PAYMENT.CAPTURE.REFUNDED"},{"name":"PAYMENT.AUTHORIZATION.VOIDED"},{"name":"PAYMENT.CAPTURE.REVERSED"},{"name":"PAYMENT.ORDER.CANCELLED"},{"name":"PAYMENT.CAPTURE.DENIED"},{"name":"PAYMENT.CAPTURE.COMPLETED"},{"name":"VAULT.PAYMENT-TOKEN.CREATED"},{"name":"VAULT.PAYMENT-TOKEN.DELETED"},{"name":"PAYMENT.CAPTURE.PENDING"},{"name":"PAYMENT.SALE.COMPLETED"},{"name":"PAYMENT.SALE.REFUNDED"},{"name":"BILLING.SUBSCRIPTION.CANCELLED"},{"name":"BILLING.PLAN.PRICING-CHANGE.ACTIVATED"},{"name":"CATALOG.PRODUCT.UPDATED"},{"name":"BILLING.PLAN.UPDATED"}]}
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+2025-10-01T05:27:02+00:00 ERROR #2127 - Failed to subscribe webhooks: [Error] Not Found
